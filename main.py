@@ -84,6 +84,21 @@ async def crash(ctx, multiplier: float):
     embed.set_footer(text="Vex Services | discord.gg/9G3m78jZSY")
     await ctx.reply(embed=embed)
 
+# Help Command
+@bot.command()
+async def cmd(ctx):
+    embed=discord.Embed(color=0x11F1D3)
+    embed.add_field(name="*COMMANDS*", value=f"""
+- $mine (predicts mines)
+- $crash (predicts crash)
+- $value (predicts how much robux your going to gain/lose)
+- $tr (predicts towers)
+- $re (predicts roulette)
+- $cmd (shows this list)""")
+    pfp = 'https://cdn.discordapp.com/attachments/976337461254959144/1016437269948801024/standard.gif'
+    embed.set_thumbnail(url=pfp)
+    embed.set_footer(text="Vex Services | discord.gg/9G3m78jZSY")
+    await ctx.reply(embed=embed)
 
 # Value Command
 @bot.command()
