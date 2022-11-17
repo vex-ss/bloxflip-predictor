@@ -159,7 +159,7 @@ async def anu(ctx, e):
 @bot.command(name="re")
 async def roulette(ctx):
   output = roulettepredictor()
-  embed=discord.Embed(title="Reoulette Prediction", description=f" Predicting: Roulette")
+  embed=discord.Embed(title="Roulette Prediction", description=f" Predicting: Roulette")
   embed.add_field(name="Roulette", value=output, inline=False)
   pfp = 'https://cdn.discordapp.com/attachments/976337461254959144/1016437269948801024/standard.gif'
   embed.set_thumbnail(url=pfp)
